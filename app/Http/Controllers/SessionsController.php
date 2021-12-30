@@ -19,7 +19,6 @@ class SessionsController extends Controller
             'password' => 'required'
         ]);
 
-        // dd($credentials);
         if (Auth::attempt($credentials)) {
             session()->flash('success', '欢迎回来！');
             return redirect()->route('users.show', [Auth::user()]);
@@ -27,5 +26,12 @@ class SessionsController extends Controller
             session()->flash('danger', '邮箱和密码不匹配');
             return redirect()->back()->withInput();
         }
+    }
+
+    public function destroy()
+    {
+        Auth::logout();
+        session()->flash('success', '成功退出');
+        return redirect('login');
     }
 }
