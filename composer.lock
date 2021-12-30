@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d4c33ac454ba6e03ce3359e8c24a273",
+    "content-hash": "c682e8c4b5f7dc76a59105688c8d683d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1033,16 +1033,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "10.1.11",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "b6d59c490c28e866c00258497add213b62ca4444"
+                "reference": "96d7868069de7823a680710cc09d51fed24a5dbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/b6d59c490c28e866c00258497add213b62ca4444",
-                "reference": "b6d59c490c28e866c00258497add213b62ca4444",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/96d7868069de7823a680710cc09d51fed24a5dbd",
+                "reference": "96d7868069de7823a680710cc09d51fed24a5dbd",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1054,20 +1054,8 @@
             "require": {
                 "ext-json": "*"
             },
-            "require-dev": {
-                "andrey-helldar/pretty-array": "^2.3",
-                "andrey-helldar/support": "^4.7",
-                "guzzlehttp/guzzle": "^7.3",
-                "laravel/breeze": "^1.2",
-                "laravel/fortify": "^1.7",
-                "laravel/jetstream": "^2.3",
-                "php": "^8.0",
-                "phpunit/phpunit": "^9.5",
-                "symfony/finder": "^5.2",
-                "symfony/var-dumper": "^5.2",
-                "vlucas/phpdotenv": "^5.3"
-            },
             "suggest": {
+                "ablunier/laravel-lang-installer": "Command for easily add languages to a Laravel project",
                 "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
                 "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
                 "overtrue/laravel-lang": "Command to add languages in your project"
@@ -1079,8 +1067,8 @@
             ],
             "authors": [
                 {
-                    "name": "Laravel-Lang Team",
-                    "homepage": "https://github.com/Laravel-Lang"
+                    "name": "caouecs",
+                    "email": "caouecs@caouecs.net"
                 }
             ],
             "description": "Languages for Laravel",
@@ -1092,9 +1080,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
-                "source": "https://github.com/Laravel-Lang/lang"
+                "source": "https://github.com/Laravel-Lang/lang/tree/5.0.0"
             },
-            "time": "2021-11-21T18:22:31+00:00"
+            "time": "2020-03-17T15:25:41+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2343,16 +2331,16 @@
         },
         {
             "name": "overtrue/laravel-lang",
-            "version": "5.0.2",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/laravel-lang.git",
-                "reference": "cb82a2f1e5fd1c7313a5aa1531f02cd5838969e4"
+                "reference": "d8c35f9c21df83a9f418a80b3be5e131bae29494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/cb82a2f1e5fd1c7313a5aa1531f02cd5838969e4",
-                "reference": "cb82a2f1e5fd1c7313a5aa1531f02cd5838969e4",
+                "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/d8c35f9c21df83a9f418a80b3be5e131bae29494",
+                "reference": "d8c35f9c21df83a9f418a80b3be5e131bae29494",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2363,8 +2351,8 @@
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/lang": "^10.1",
-                "symfony/process": "^5.0.0"
+                "laravel-lang/lang": "^5.0",
+                "symfony/process": "^4.0|^5.0"
             },
             "require-dev": {
                 "laravel/framework": "~8.1"
@@ -2402,7 +2390,7 @@
             ],
             "support": {
                 "issues": "https://github.com/overtrue/laravel-lang/issues",
-                "source": "https://github.com/overtrue/laravel-lang/tree/5.0.2"
+                "source": "https://github.com/overtrue/laravel-lang/tree/4.2.2"
             },
             "funding": [
                 {
@@ -2410,7 +2398,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-08-20T12:06:44+00:00"
+            "time": "2021-04-28T03:50:38+00:00"
         },
         {
             "name": "phpoption/phpoption",

@@ -3,7 +3,7 @@
     <a href="{{ route('home') }}" class="navbar-brand">LaraWeibo</a>
     <ul class="navbar-nav justify-content-end">
       <li class="nav-item"><a href="{{ route('help') }}" class="nav-link">帮助</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">登陆</a></li>
+      <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">登陆</a></li>
     </ul>
   </div>
 </nav>
