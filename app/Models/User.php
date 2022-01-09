@@ -62,4 +62,9 @@ class User extends Authenticatable
         $hash = md5(strtolower(trim($this->attributes['email'])));
         return "https://dn-qiniu-avatar.qbox.me/avatar/$hash?s=$size";
     }
+
+    public function feed()
+    {
+        return $this->statuses()->orderBy('created_at', 'desc');
+    }
 }
