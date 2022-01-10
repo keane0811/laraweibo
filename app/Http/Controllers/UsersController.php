@@ -56,7 +56,7 @@ class UsersController extends Controller
 
     public function show(User $user)
     {
-        $feed_items = $user->feed()->paginate(30);
+        $feed_items = $user->statuses()->orderBy('created_at', 'desc')->paginate(30);
         return view('users.show', compact('user', 'feed_items'));
     }
 
