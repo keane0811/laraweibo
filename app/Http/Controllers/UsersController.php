@@ -60,6 +60,20 @@ class UsersController extends Controller
         return view('users.show', compact('user', 'feed_items'));
     }
 
+    public function followings(User $user)
+    {
+        $users = $user->followings()->paginate(30);
+        $title = $user->name . '关注的人';
+        return view('users.show_fans', compact('users', 'title'));
+    }
+
+    public function fans(User $user)
+    {
+        $users = $user->fans()->paginate(30);
+        $title = $user->name . '的粉丝';
+        return view('users.show_fans', compact('users', 'title'));
+    }
+
     public function edit(User $user)
     {
         $this->authorize('update', $user);
